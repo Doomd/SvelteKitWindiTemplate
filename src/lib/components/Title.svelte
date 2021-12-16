@@ -1,1 +1,5 @@
-<h1 class="text-2xl text-blue-900 font-bold"><slot /></h1>
+<script lang="ts">
+export let classes: string = null
+</script>
+
+<h1 class="text-2xl font-bold {classes} leading-relaxed"><slot /></h1>

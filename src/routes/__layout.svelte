@@ -1,27 +1,27 @@
 <script>
 import 'virtual:windi.css'
-import Link from '$lib/components/Link.svelte'
+import Header from '$lib/components/Header.svelte'
 import Footer from '$lib/components/Footer.svelte'
 </script>
 
 <page class="flex flex-col min-h-screen">
-  <header class="flex p-4 justify-between bgAccent dark:bgAccentDark">
-    <h1 class="text-xl text-blue-500">Site Name</h1>
-    <nav>
-      <Link path={'/'} name="Home" />
-      <Link path={'/about'} name="About" />
-      <Link path={'/settings'} name="Settings" />
-    </nav>
+  <header class="flex p-4 justify-between items-center bgAccent dark:bgAccentDark">
+    <Header />
   </header>
 
   <main class="bg-gray-100 flex-1 p-4 dark:bg-gray-900">
     <slot />
   </main>
 
-  <footer class="flex p-4 justify-center bgAccent dark:bgAccentDark"><Footer /></footer>
+  <footer class="flex p-4 justify-center bgAccent dark:bgAccentDark">
+    <Footer />
+  </footer>
 </page>
 
-<style global>
+<style global lang="postcss">
+:root {
+  --highlight-color: #1ec0f1;
+}
 body {
   margin: 0;
   min-height: 100vh;
@@ -32,5 +32,12 @@ body {
 }
 .bgAccentDark {
   @apply bg-gray-700;
+}
+main a {
+  border-bottom: 2px solid var(--highlight-color);
+}
+main a:hover {
+  border-bottom: transparent;
+  background: var(--highlight-color);
 }
 </style>
