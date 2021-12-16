@@ -1,6 +1,6 @@
 {
   "name": "doomd-sk-windi-template",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "type": "module",
   "scripts": {
     "package": "svelte-kit package",
