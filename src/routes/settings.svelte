@@ -1,5 +1,5 @@
 <script>
-import Title from '$lib/design/Title.svelte'
+import Title from '$lib/components/Title.svelte'
 </script>
 
 <Title>Settings</Title>
