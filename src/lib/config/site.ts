@@ -5,10 +5,9 @@ export const site = {
   version: v.version,
   versionTS: v.versionTS,
   packageName: v.packageName,
-  packageLink: 'https://github.com/Doomd/SvelteWindiTemplate',
+  packageLink: 'https://github.com/Doomd/SvelteKitWindiTemplate',
   links: [
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
-    { name: 'Settings', path: '/settings' },
   ],
 }
