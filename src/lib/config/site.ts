@@ -1,7 +1,7 @@
 import * as v from './version'
 
 export const site = {
-  name: 'Svelekit with Windicss Template',
+  name: 'SveleKit with Windicss Template',
   version: v.version,
   versionTS: v.versionTS,
   packageName: v.packageName,

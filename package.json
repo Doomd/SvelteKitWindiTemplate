@@ -1,6 +1,6 @@
 {
   "name": "doomd-sk-windi-template",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "type": "module",
   "scripts": {
     "package": "svelte-kit package",
@@ -13,7 +13,7 @@
     "build:only": "npm run setver && svelte-kit build",
     "dev": "npm run dev:only",
     "build": "npm run build:only",
-    "insertvars": "node npm_scripts/insert_vars.js",
+    "insertvars": "node node_scripts/insert_vars.js",
     "setver": "genversion --es6 src/lib/config/version.ts",
     "postsetver": "npm run insertvars",
     "getver": "node -p process.env.npm_package_version",
@@ -48,9 +48,6 @@
     "windicss": "^3.4.0"
   },
   "archive": {
-    "preinsertvars": "tsc --resolveJsonModule npm_scripts/insert_vars.ts",
-    "insertvars": "node --loader ts-node/esm npm_scripts/insert_vars.ts",
-    "enquirer": "^2.3.6",
     "somethingidontuseanymore": "but i didn't want to delete just yet..."
   }
 }

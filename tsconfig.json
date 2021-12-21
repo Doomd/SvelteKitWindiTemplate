@@ -1,15 +1,6 @@
 {
   "ts-node": {
-    //
-    // "files": true,
-    "compilerOptions": {
-      // "module": "commonjs",
-      // "moduleResolution": "classic",
-      // "esModuleInterop": true
-      // "lib": ["es2016", "DOM"]
-      //
-    }
-    // "include": ["./package.json"]
+    "compilerOptions": {}
   },
   "compilerOptions": {
     "moduleResolution": "node",
