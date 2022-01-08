@@ -1,0 +1,20 @@
+printWidth: 100
+tabWidth: 2
+useTabs: false
+semi: false
+singleQuote: true
+quoteProps: consistent # as-needed | consistent | preserve
+jsxSingleQuote: true
+trailingComma: es5 # es5 | none | all
+bracketSpacing: true
+bracketSameLine: false
+arrowParens: always # always | avoid
+proseWrap: never # preserve | never | always
+htmlWhitespaceSensitivity: ignore # css | strict | ignore
+embeddedLanguageFormatting: off # off | auto
+# https://prettier.io/docs/en/options.html
+# SVELTE SPECIFIC:
+svelteSortOrder: options-scripts-markup-styles
+svelteStrictMode: false
+svelteAllowShorthand: true
+svelteIndentScriptAndStyle: false
